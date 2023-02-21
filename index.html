@@ -5,29 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/b4e0939b37.js" crossorigin="anonymous"></script>    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="calculadora">
-        <div class="numeroDisplay" id="numeroActual">0</div>
-        <div class="numeroDisplay" id="resultado">0</div>
-        <div id="botones" class="grid-container">
-            <button class="botonCalc" id="botonSiete">7</button>
-            <button class="botonCalc" id="botonOcho">8</button>
-            <button class="botonCalc" id="botonNueve">9</button>
-            <button class="botonOp" id="suma">+</button>
-            <button class="botonCalc" id="botonCuatro">4</button>
-            <button class="botonCalc" id="botonCinco">5</button>
-            <button class="botonCalc" id="botonSeis">6</button>
-            <button class="botonOp" id="resta">-</button>
-            <button class="botonCalc" id="botonUno">1</button>
-            <button class="botonCalc" id="botonDos">2</button>
-            <button class="botonCalc" id="botonTres">3</button>
-            <button class="botonOp" id="division">÷</button>
-            <button class="botonCalc" id="botonCero">0</button>
-            <div></div>
-            <button class="botonOp" id="mult">×</button>
-            <div></div>
+    <div class="container">
+        <div id="calculadora">
+            <div class="numeroDisplay" id="resultado">0</div>
+            <div class="numeroDisplay" id="actual">0</div>
+            <div id="botones" class="grid-container">
+                <button class="botonCalc" id="botonSiete">7</button>
+                <button class="botonCalc" id="botonOcho">8</button>
+                <button class="botonCalc" id="botonNueve">9</button>
+                <button class="botonOp" id="suma">+</button>
+                <button class="botonCalc" id="botonCuatro">4</button>
+                <button class="botonCalc" id="botonCinco">5</button>
+                <button class="botonCalc" id="botonSeis">6</button>
+                <button class="botonOp" id="resta">-</button>
+                <button class="botonCalc" id="botonUno">1</button>
+                <button class="botonCalc" id="botonDos">2</button>
+                <button class="botonCalc" id="botonTres">3</button>
+                <button class="botonOp" id="div">÷</button>
+                <button class="botonOp" id="botonReset">AC</button>
+                <button class="botonCalc" id="botonCero">0</button>
+                <button class="botonOp" id="botonDelete"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="botonOp" id="mult">×</button>
+            </div>
+        </div>
+        <div class="log" id="log">
+            <h3>Historial</h3>
         </div>
     </div>
     <script type="text/javascript" src="./index.js"></script>
